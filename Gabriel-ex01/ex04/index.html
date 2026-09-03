@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de tarefas do dia</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <p class="etiqueta">Exercício FE04</p>
+        <h1>Painel de tarefas do dia</h1>
+        <p class="descricao">Organize as tarefas em cartões e use JavaScript para atualizar o status da rotina.</p>
+    </header>
+
+    <main class="container">
+        <section class="painel" aria-labelledby="titulo-tarefas">
+            <h2 id="titulo-tarefas">Tarefas planejadas</h2>
+            <div class="lista-tarefas">
+                <article class="tarefa">
+                    <h3>Revisar conteúdo</h3>
+                    <p>Ler os materiais da aula e anotar os pontos principais.</p>
+                </article>
+                <article class="tarefa">
+                    <h3>Praticar código</h3>
+                    <p>Montar uma página com HTML, CSS e JavaScript separados.</p>
+                </article>
+                <article class="tarefa">
+                    <h3>Testar o projeto</h3>
+                    <p>Abrir no navegador e verificar se tudo está funcionando.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="painel" aria-labelledby="titulo-status">
+            <h2 id="titulo-status">Status do dia</h2>
+            <p id="statusRotina" class="status">Situação atual: rotina em andamento.</p>
+            <button id="atualizarRotina" type="button">Atualizar status</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Exercício FE04 - 2 DS Subsequente</p>
+    </footer>
+</body>
+</html>
